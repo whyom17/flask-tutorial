@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <style>
+        body{ 
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: dimgrey;
+            padding: 50px;
+            overflow-x: hidden;
+        }
+        header{
+            width: 100%;
+            height: 45px;
+            border-radius: 20px;
+            background-color: rgb(143, 142, 142);
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        footer{
+            width: 100%;
+            height: 60px;
+            background-color: rgb(143, 142, 142);
+            color: #fff;
+            padding: 15px;
+            border-radius: 20px;
+        }
+
+        main{
+            width: 100%;
+            height: 300px;
+            padding: 80px;
+            color: #fff;
+        }
+
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+            display: inline-block;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/login">Login</a>
+        <a href="/contact">ContactUs</a>
+    </header>
+
+    <main>
+        {% block content %}
+   
+        {% endblock %}
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
