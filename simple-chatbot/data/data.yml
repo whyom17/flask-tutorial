@@ -1,0 +1,24 @@
+# What is a .yml file or YAML file ?
+# a configuration file written in YAML (YAML Ain’t Markup Language)
+# it is used to store data in a human-readable format, often used for configuration files or data exchange between languages with different data structures.
+# it is similar to JSON but more readable and easier to write.
+# often used for settings, data serialization, and infrastructure tools like Docker, GitHub Actions, and Kubernetes.
+
+# Markup vs Markdown Language :
+# Markup is a broad category of languages used to define the structure and presentation of text.
+# - Examples: HTML, XML
+# Markdown is a lightweight markup language designed for simplicity and readability.
+
+categories:
+- conversations
+conversations:
+-- Good Evening
+ - Goodie Evening!
+-- Hello
+ - Hey, how u doin' ?
+-- I am fine but I am hungry
+ - You should eat something.
+ - I can order food for you.
+ - Do you want to order food?
+-- No, I am not hungry anymore
+ - Ok, let me know if you need anything.

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Flask Chatbot</h1>
+    <div id="chatbox">
+        <p class="botText"><span>Hi! I am your Chatterbot.</span></p>
+    </div>
+    <div id="enter">
+        <input id="userInput" type="text" name="msg" placeholder="Ask anything" />
+        <input id="buttonInput" type="submit" value="➡️">
+    </div>
+    <script>
+        function getBotResponse(){
+            let rawText;
+            let chatbox= document.querySelector('#chatbox')
+            let userText= document.getElementById("userInput");
+            let submit= document.getElementById("buttonInput");
+             submit.addEventListener("click", function() {
+                rawText = userText.value;
+                chatbox.innerHTML += `<p class='userText'>${rawText}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
